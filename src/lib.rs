@@ -440,11 +440,10 @@ fn cuda_include_dir() -> Option<PathBuf> {
         "CUDA_ROOT",
         "CUDA_TOOLKIT_ROOT_DIR",
         "CUDNN_LIB",
-        "Path",  // E.g. Windows
+        "Path",  // e.g. Windows
         "LD_LIBRARY_PATH",  // e.g. Linux
-        ""
-
     ];
+    
     #[allow(unused)]
     let env_vars = env_vars
         .into_iter()
